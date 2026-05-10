@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050507;
+  --color-foreground: #e0e5eb;
+  
+  --color-neon-blue: #00d4ff;
+  --color-dark-blue: #005f73;
+  --color-accent-glow: rgba(0, 212, 255, 0.5);
+  --color-muted: #8892b0;
+  
+  --font-heading: var(--font-rajdhani);
+  --font-body: var(--font-inter);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+}
+
+
+
+/* Utilities */
+@utility glow-text {
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+}
+
+@utility glow-box {
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.2), inset 0 0 10px rgba(0, 212, 255, 0.05);
+}
+
+@utility glow-border {
+  border-color: var(--color-neon-blue);
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
+}
